@@ -5,7 +5,7 @@
 }
 
 @font-face {
-  font-family: "Circular Std";
+  font-family: "Circular Book";
   src: url(./../fonts/circular-std-book.ttf);
   font-weight: 450;
 }
@@ -23,7 +23,7 @@
 }
 
 body {
-  font-family: "Circular Std";
+  font-family: "Circular Book";
 }
 
 a {
