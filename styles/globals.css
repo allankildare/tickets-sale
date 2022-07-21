@@ -1,9 +1,29 @@
-html,
-body {
+@font-face {
+  font-family: "Circular Medium";
+  src: url(./../fonts/circular-std-medium-500.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url(./../fonts/circular-std-book.ttf);
+  font-weight: 450;
+}
+
+@font-face {
+  font-family: "Circular Bold";
+  src: url(./../fonts/circular-std-bold.ttf);
+  font-weight: 700;
+}
+
+* {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+  font-family: "Circular Std";
 }
 
 a {
@@ -11,6 +31,4 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-}
+
