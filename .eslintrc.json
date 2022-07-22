@@ -3,6 +3,6 @@
   "plugins": ["sort-exports"],
   "rules": {
     "eol-last": "error",
-    "sort-exports/sort-exports": ["error", {"sortDir": "asc"}]
+    "sort-exports/sort-exports": ["error", {"sortDir": "asc", "sortExportKindFirst": "type"}]
   }
 }
