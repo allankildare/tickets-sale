@@ -1,4 +1,5 @@
-export { color } from './color'
 export { brandColor } from './brandColor'
-export { spacing } from './spacing'
+export { color } from './color'
 export { grayScale } from './grayScale'
+export { radius } from './radius'
+export { spacing } from './spacing'

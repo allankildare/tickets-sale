@@ -1,5 +1,5 @@
 export const grayScale = {
-    'gray10': 'rgb(231, 233, 237)',
+    'gray10': 'rgb(231, 233, 237)', // HEX: #e7e9ed
     'gray20': 'rgb(206, 210, 219)',
     'gray30': 'rgb(182, 188, 201)',
     'gray40': 'rgb(158, 165, 184)',
