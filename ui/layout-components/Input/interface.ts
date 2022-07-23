@@ -4,4 +4,5 @@ export interface InputProps {
     placeholder?: string
     success?: boolean
     error?: boolean
+    errorMessage?: string
 }

@@ -1,11 +1,20 @@
-import { InputField, TextField } from './styles'
+import { InputField, TextField, StyledLabel } from './styles'
 import { If } from 'ui/components/If'
 import { InputProps } from './interface'
+import { Paragraph } from 'layout-components/typography/Paragraph'
 
 export function Input(props: InputProps) {
-  const { label, disabled, placeholder, success, error } = props
+  const { label, disabled, placeholder, success, error, errorMessage } = props
 
   return (
+  <>
+    <If condition={label}>
+        <StyledLabel
+            as="label"
+        >
+            {label}
+        </StyledLabel>
+    </If>
     <TextField success={success} error={error} disabled={disabled}>
       <InputField
         type="text"
@@ -86,5 +95,9 @@ export function Input(props: InputProps) {
         </div>
       </If>
     </TextField>
+    <If condition={error && errorMessage}>
+        <Paragraph isError={error}>{errorMessage}</Paragraph>
+    </If>
+    </>
   )
 }

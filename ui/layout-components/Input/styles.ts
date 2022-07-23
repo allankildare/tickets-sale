@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { InputProps } from './interface'
-import { ifProp } from 'styled-tools'
+import { Paragraph } from 'layout-components/typography/Paragraph'
 
 export const InputField = styled.input<InputProps>`
     background-color: #FAFAFC;
@@ -9,7 +9,6 @@ export const InputField = styled.input<InputProps>`
     padding-right: ${({ success, error }) => !(success || error) && '.75rem'};
     width: 100%;
     border: 1px solid ${({ theme }) => theme.grayScale.gray10};
-
     border-right: ${({ success, error, disabled }) => ((success || error) && !disabled) ? 'none' : ''};
     border-radius: ${({ theme, success, error, disabled }) => {
         if((success || error) && !disabled) return `${theme.radius.default} 0 0 ${theme.radius.default}`
@@ -21,6 +20,7 @@ export const InputField = styled.input<InputProps>`
         if(error) return theme.color.error
         return ''
     }};
+    font-size: 16px;
     
     &:focus {
         border-color: ${({ theme, success, error }) => {
@@ -35,12 +35,19 @@ export const InputField = styled.input<InputProps>`
         border-color: ${({ theme }) => theme.grayScale.gray10};
     }
 `
+
+export const StyledLabel = styled(Paragraph)`
+    color: ${({ theme }) => theme.brandColor.black};
+    opacity: 0.6;
+    font-size: 14px;
+`
+
 export const TextField = styled.div<InputProps>`
     display: flex;
     max-width: 400px;
 
     & > div.icon {
-        background-color: '#FAFAFC';
+        background-color: #FAFAFC;
         display: ${({ disabled }) => {
             if(disabled) return 'none'
         }};
