@@ -1,2 +1,7 @@
 export { Button } from './Button'
+export { DateField } from './DateField'
+export { Heading } from './Heading'
 export { Icon } from './Icon'
+export { Input} from './Input'
+export { Paragraph } from './Paragraph'
+export { SearchField } from './SearchField'
