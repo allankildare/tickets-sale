@@ -10,3 +10,8 @@ const icons =  {
 }
 
 export default icons
+
+export { Logo } from './Logo'
+export { BrazilFlag } from './BrazilFlag'
+export { UserLogin } from './UserLogin'
+export { Help } from './Help'
