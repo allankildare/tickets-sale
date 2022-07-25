@@ -1,7 +1,7 @@
 import { InputField, TextField, StyledLabel } from './styles'
 import { If } from 'ui/components/If'
 import { InputProps } from './interface'
-import { Paragraph } from 'layout-components/typography/Paragraph'
+import { Paragraph } from 'layout-components/Paragraph'
 
 export function Input(props: InputProps) {
   const { label, disabled, placeholder, success, error, errorMessage } = props

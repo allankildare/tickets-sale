@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { InputProps } from './interface'
-import { Paragraph } from 'layout-components/typography/Paragraph'
+import { Paragraph } from 'layout-components/Paragraph'
 
 export const InputField = styled.input<InputProps>`
     background-color: #FAFAFC;
