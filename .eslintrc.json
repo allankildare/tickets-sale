@@ -2,7 +2,6 @@
   "extends": "next/core-web-vitals",
   "plugins": ["sort-exports"],
   "rules": {
-    "eol-last": "error",
-    "sort-exports/sort-exports": ["error", {"sortDir": "asc", "sortExportKindFirst": "type"}]
+    "eol-last": "error"
   }
 }
