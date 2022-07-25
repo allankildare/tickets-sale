@@ -4,4 +4,5 @@ export interface ParagraphProps {
     children: string
     color?: string
     isError?: boolean
+    isBold?: boolean
 }
