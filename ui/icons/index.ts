@@ -13,5 +13,7 @@ export default icons
 
 export { Logo } from './Logo'
 export { BrazilFlag } from './BrazilFlag'
-export { UserLogin } from './UserLogin'
+export { Calendar } from './Calendar'
 export { Help } from './Help'
+export { Localization } from './Localization'
+export { UserLogin } from './UserLogin'
