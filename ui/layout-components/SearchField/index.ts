@@ -1,1 +1,1 @@
-export { Search } from './Search'
+export { SearchField } from './SearchField'

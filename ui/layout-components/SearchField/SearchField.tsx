@@ -7,7 +7,7 @@ interface SearchProps {
   onClick?: () => void
 }
 
-export function Search(props: SearchProps) {
+export function SearchField(props: SearchProps) {
   const { placeholder, onClick } = props
   const [isOnFocus, setIsOnFocus] = useState(false)
 
